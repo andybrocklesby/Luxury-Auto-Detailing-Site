@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rethink Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* MAIN */
+
+header{
+    background-color: #141414;
+    padding: 5em;
+    text-align: center;
+}
+
+h1, h2, h3{
+    margin: 2em 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+p, .service-description{
+    font-size: 1.2rem;
+    margin: 1.5em 0;
+    line-height: 1.5;
+}
+
+nav ul{
+    margin-top: 3em;
+}
+
+hr{
+    width: 50%;
+    margin: 3em auto;
+    border: 1px solid rgba(0, 0, 0, 0.48);
+}
+
+footer{
+    background-color:#141414;
+    padding: 6em 0;
+    color: #fff;
+    text-align: center;
+    margin-top: 5em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+input, textarea{
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: .4em;
+}
+
+button{
+    background-color: #141414;
+    width: fit-content;
+    margin: 0 auto;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+/* CLASSES */
+
+.container{
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.header-img{
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.header-link{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    display: block;
+    padding: 1em 0;
+    font-size: 0.9rem;
+}
+
+.header-link:hover{
+    opacity: 0.5;
+}
+
+.hero-img{
+    height: 20em;
+    background-image: url(./images/Screen-Shot-2024-03-20-at-3.54.55-PM.webp);
+    background-size: cover;
+    background-position:bottom;
+}
+
+.service{
+    text-align: center;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 1 300px;
+}
+
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.service-img{
+    width: 100%;
+}
+
+.service-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.service-description{
+    font-weight: 200;
+}
+
+.service-price{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.contact{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 775px){
+    header{
+        text-align: left;
+    }
+
+    .header-img{
+        margin: 0;
+    }
+
+    header .container{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    .header-link{
+        font-size: 1.225rem;
+        border-bottom: none;
+        margin-left: 1em;
+    }
+
+    .hero-img{
+        background-position: center;
+    }
+
+    .service{
+        text-align: left;
+    }
+}
+
+@media (max-width: 774px){
+    p{
+        text-align: center;
+    }
+}

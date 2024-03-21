@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NorthWest Finesse | Luxury Automotive Detailing</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <img 
+                class="header-img"
+                src="./images/IMG_3310.jpg" 
+                alt="Fancy white text saying North West Finesse, the name of the business">
+            <nav>
+                <ul>
+                    <li><a class="header-link" href="#">HOME</a></li>
+                    <li><a class="header-link" href="#services">SERVICES</a></li>
+                    <li><a class="header-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-img"></div>
+        <div class="container">
+            <h1>Welcome to the home of luxury automotive detailing</h1>
+            <p>Welcome to NorthWest Finesse, your premier destination for luxury automotive detailing in North West Arkansas.
+               At NorthWest Finesse, we specialize in providing the highest quality cleaning services using the best products
+               on the market. We exclusively use top brands like CarPro and Koch Chemie to ensure a thorough and safe wash for
+               your vehicle.</p>
+            <p>Our team is dedicated to delivering unparalleled results, leaving your car looking immaculate both inside and
+               out. Whether you're a car enthusiast looking to maintain your prized possession or a luxury vehicle owner wanting
+               the best detail available, NorthWest Finesse is your ultimate solution.</p>
+            <p>Experience the pinnacle of automotive detailing with NorthWest Finesse and give your vehicle the care it deserves.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="service-container" id="service-container"></div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="contact" id="contact">
+        <h3>Contact Us</h3>
+        <form id="form">
+            <input 
+                type="text"
+                id="name"
+                name="name"
+                placeholder="first name"
+                maxlength="30"
+                required>
+            <input 
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email"
+                maxlength="30"
+                required>
+            <input 
+                type="tel"
+                id="number"
+                name="number"
+                placeholder="cell phone (10 digit number)"
+                maxlength="10"
+                pattern="[0-9]"
+                required>
+            <textarea 
+                name="text-content" 
+                id="text-content" 
+                cols="30" 
+                rows="10"
+                placeholder="I'd like to get a quote on my Toyota Corolla GR, please."
+                required></textarea>  
+            <button type="submit" id="submit-btn">SUBMIT</button> 
+        </form>
+    </section>
+
+    <footer id="footer">
+        
+    </footer>
+
+    <script src="app.js" type="module"></script>
+
+</body>
+</html>
