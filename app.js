@@ -21,11 +21,12 @@ const generateService = () => {
             title,
             image,
             description,
-            price
+            price,
+            alt
         } = service;
         serviceHtml += `
                 <div class="service">
-                    <img class="service-img" src="${image}" alt="">
+                    <img class="service-img" src="${image}" alt="${alt}">
                     <div class="service-title">${title}</div>
                     <div class="service-description">${description}</div>
                     <div class="service-price">Starting at ${price}</div>
