@@ -57,14 +57,12 @@ form{
 input, textarea{
     width: 70%;
     max-width: 400px;
-    margin: 0 auto;
     padding: .4em;
 }
 
 button{
     background-color: #141414;
     width: fit-content;
-    margin: 0 auto;
     color: #fff;
     border: none;
     font-size: 1.2rem;
@@ -72,11 +70,19 @@ button{
     cursor: pointer;
 }
 
+input, 
+textarea, 
+button,
+.container,
+.header-img{
+    margin: 0 auto;
+}
+
+
 /* CLASSES */
 
 .container{
     max-width: 850px;
-    margin: 0 auto;
     padding: 0 2em;
 }
 
@@ -84,7 +90,6 @@ button{
     width: 100%;
     max-width: 400px;
     display: block;
-    margin: 0 auto;
     border: 1px solid white;
 }
 
